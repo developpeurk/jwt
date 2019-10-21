@@ -1,6 +1,6 @@
 package org.sid.service;
 
-import org.h2.api.UserToRolesMapper;
+//import org.h2.api.UserToRolesMapper;
 import org.sid.dao.RoleRepository;
 import org.sid.dao.UserRepository;
 import org.sid.entities.AppRole;

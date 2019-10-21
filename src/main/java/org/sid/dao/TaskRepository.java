@@ -1,4 +1,4 @@
-package org.sid.etities.dao;
+package org.sid.dao;
 
 import org.sid.entities.Task;
 import org.springframework.data.jpa.repository.JpaRepository;

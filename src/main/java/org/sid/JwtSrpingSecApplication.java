@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+import org.sid.dao.TaskRepository;
 import org.sid.entities.AppRole;
 import org.sid.entities.AppUser;
 import org.sid.entities.Task;
-import org.sid.etities.dao.TaskRepository;
 import org.sid.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -27,6 +27,7 @@ public class JwtSrpingSecApplication implements CommandLineRunner {
 	private TaskRepository taskRepository;
     @Autowired
     private AccountService accountService;
+
     
 	public static void main(String[] args) {
 		SpringApplication.run(JwtSrpingSecApplication.class, args);
@@ -37,6 +38,7 @@ public class JwtSrpingSecApplication implements CommandLineRunner {
 	public BCryptPasswordEncoder getBCPE() {
 		return new BCryptPasswordEncoder();
 	}
+	
 
 	@Override
 	public void run(String... args) throws Exception {

@@ -2,8 +2,8 @@ package org.sid.web;
 
 import java.util.List;
 
+import org.sid.dao.TaskRepository;
 import org.sid.entities.Task;
-import org.sid.etities.dao.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
